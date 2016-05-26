@@ -76,7 +76,7 @@ namespace Tweetinvi
             return CreateCredentialsFromVerifierCode(verifierCode, authContext.Token);
         }
 
-        private static ITwitterCredentials CreateCredentialsFromVerifierCode(string verifierCode, IAuthenticationToken authToken)
+        public static ITwitterCredentials CreateCredentialsFromVerifierCode(string verifierCode, IAuthenticationToken authToken)
         {
             return _authFactory.GetCredentialsFromVerifierCode(verifierCode, authToken);
         }
